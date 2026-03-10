@@ -3,6 +3,10 @@ import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 const gallery = [
+   "/images/projects/his-rsud-cibinong/cibinong1.jpeg",
+   "/images/projects/his-rsud-cibinong/cibinong2.jpeg",
+   "/images/projects/his-rsud-cibinong/cibinong3.jpeg",
+   "/images/projects/his-rsud-cibinong/cibinong4.jpeg",
 ];
 
 const activities = [

@@ -3,6 +3,7 @@ import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 const gallery = [
+  "/images/projects/his-rsud-ternate/ternate1.jpeg",
 ];
 
 const activities = [
@@ -69,7 +70,7 @@ const Ternate = () => {
           className="mb-12"
         >
           <h1 className="text-4xl font-bold mb-4">
-            Hospitality Information System <span className="text-gradient">RSUD Chasan Bosoeirie</span>
+            Hospitality Information System <span className="text-gradient">RSUD Chasan Boesoirie </span>
           </h1>
 
           <p className="text-muted-foreground mb-6">

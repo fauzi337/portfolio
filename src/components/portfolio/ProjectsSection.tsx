@@ -36,7 +36,7 @@ const projects = [
     type: "project",
   },
   {
-    title: "Hospitality Information System RSUD Kota Bekasi",
+    title: "Hospitality Information System dr. Chasbullah Abdulmadjid Kota Bekasi",
     description: "A modular Hospital Information System (HIS) deployed on an on-premise infrastructure using separate servers for the application and database. the system was designed using Angular and Laravel 7.4 The architecture utilizes PostgreSQL for data management. The platform integrates multiple hospital modules and external healthcare services such as BPJS, e-Claim, RIS, PACS, LIS, and online pharmacy systems.",
     tech: [ "Angular", "Laravel", "PostgreSQL", "Kendo UI", "REST API"],
     github: "#",
@@ -60,7 +60,7 @@ const projects = [
     type: "project",
   },
   {
-    title: "Hospitality Information System RSU AMC",
+    title: "Hospitality Information System RSU AMC Cileunyi",
     description: "A modular Hospital Information System (HIS) deployed on an on-premise infrastructure using separate servers for the application and database. the system was designed using Angular and Laravel 7.4 The architecture utilizes PostgreSQL for data management. The platform integrates multiple hospital modules and external healthcare services such as BPJS, e-Claim, RIS, PACS, LIS, and online pharmacy systems.",
     tech: ["Angular", "Laravel", "PostgreSQL", "Kendo UI", "REST API"],
     github: "#",

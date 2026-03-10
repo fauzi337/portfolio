@@ -3,6 +3,8 @@ import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 const gallery = [
+  "/images/projects/his-rsu-amc/amc1.jpeg",
+  "/images/projects/his-rsu-amc/amc2.jpeg",
 ];
 
 const activities = [

@@ -80,7 +80,7 @@ const Bekasi = () => {
           className="mb-12"
         >
           <h1 className="text-4xl font-bold mb-4">
-            Hospitality Information System <span className="text-gradient">RSUD Kota Bekasi</span>
+            Hospitality Information System <span className="text-gradient">dr. Chasbullah Abdulmadjid</span>
           </h1>
 
           <p className="text-muted-foreground mb-6">

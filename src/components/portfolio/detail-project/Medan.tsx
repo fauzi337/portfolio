@@ -3,6 +3,11 @@ import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
 const gallery = [
+  "/images/projects/his-rsu-royalprima/medan1.jpeg",
+  "/images/projects/his-rsu-royalprima/medan3.png",
+  "/images/projects/his-rsu-royalprima/medan2.png",
+  "/images/projects/his-rsu-royalprima/medan4.png",
+  "/images/projects/his-rsu-royalprima/medan5.png",
 ];
 
 const activities = [
