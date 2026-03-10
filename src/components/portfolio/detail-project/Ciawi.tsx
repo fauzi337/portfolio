@@ -16,10 +16,6 @@ const gallery = [
 
 const activities = [
   {
-    title: "Project Kick-Off Meeting",
-    desc: "Conducted kick-off meetings with hospital stakeholders to align project scope, implementation strategy, and the agreed project timeline before the system implementation began."
-  },
-  {
     title: "Master Data Collection & Verification",
     desc: "Collected and verified core master data required for the system, including hospital operational data and medical record forms. Adjustments were made to ensure data compatibility with the system configuration."
   },

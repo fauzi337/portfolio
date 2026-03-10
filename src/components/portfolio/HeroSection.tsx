@@ -28,6 +28,21 @@ const HeroSection = () => {
             <span className="text-primary">delivering structured</span> and{" "}
             <span className="text-primary">value-driven digital solutions</span>.
           </p>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-8">
+            📍{" "}
+            <span className="relative group cursor-pointer text-primary font-medium">
+              Indonesia
+
+              {/* underline */}
+              <span className="absolute left-0 -bottom-1 h-[2px] w-full bg-primary transition-all duration-300 group-hover:w-0"></span>
+
+              {/* tooltip */}
+              <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-black text-white text-xs px-3 py-1 rounded whitespace-nowrap shadow-lg">
+                Jawa Barat, Kab. Bogor, Tajurhalang 16320
+              </span>
+            </span>{" "}
+            • Open to Remote
+          </p>
         </motion.div>
 
         <motion.div
