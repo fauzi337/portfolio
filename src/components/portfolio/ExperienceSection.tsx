@@ -45,7 +45,7 @@ const experiences = [
   {
     role: "Pastry Cook",
     company: "Whiz Prime Hotel, North Jakarta",
-    period: "Oct 2020 — Apr 2021",
+    period: "Feb 2020 — Apr 2020",
     description:
       "Managed daily production within the cookies and chocolate section, including preparation, baking, packaging, and quality control. Responsible for stock monitoring, inventory requests, and coordination with warehouse operations to ensure continuous supply. Produced customized chocolate garnishes for breakfast, lunch, dinner services, complimentary cakes, and special event orders, maintaining consistency and presentation standards.",
     tech: ["Production Planning", "Inventory Control", "Quality Assurance", "Team Coordination"]
