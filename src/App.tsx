@@ -26,12 +26,19 @@ const queryClient = new QueryClient();
 
 const App = () => {
 
-  const [visitors, setVisitors] = useState(0);
-
   useEffect(() => {
-    fetch("/api/visitor")
-      .then(res => res.json())
-      .then(data => setVisitors(data.visitors));
+    const visitorId =
+      localStorage.getItem("visitor_id") || crypto.randomUUID();
+
+    localStorage.setItem("visitor_id", visitorId);
+
+    fetch("/api/visitor", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ visitorId })
+    });
   }, []);
 
   return (
@@ -39,7 +46,7 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <p>👀 {visitors} visitors</p>
+        {/* <p>👀 {visitors} visitors</p> */}
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
