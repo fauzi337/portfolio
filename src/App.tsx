@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -23,35 +24,48 @@ import Cibinong from "./components/portfolio/detail-project/Cibinong";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="/projects/cileuksa-village" element={<CileuksaVillage />} />
-          <Route path="/projects/hris" element={<HRIS />} />
-          <Route path="/projects/timeline-app" element={<TimelineApp />} />
-          <Route path="/projects/reservasi-app" element={<ReservasiSim />} />
-          <Route path="/projects/simkesmas" element={<SimKesMas />} />
-          <Route path="/projects/project-management" element={<ProjectManagement />} />
-          <Route path="/projects/project-fatmawati" element={<Fatmawati />} />
-          <Route path="/projects/project-bekasi" element={<Bekasi />} />
-          <Route path="/projects/project-ciawi" element={<Ciawi />} />
-          <Route path="/projects/project-mangusada" element={<Mangusada />} />
-          <Route path="/projects/project-amc" element={<AMC />} />
-          <Route path="/projects/project-royal-prima" element={<Medan />} />
-          <Route path="/projects/project-grhasia" element={<Grhasia />} />
-          <Route path="/projects/project-ternate" element={<Ternate />} />
-          <Route path="/projects/project-cibinong" element={<Cibinong />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+
+  const [visitors, setVisitors] = useState(0);
+
+  useEffect(() => {
+    fetch("/api/visitor")
+      .then(res => res.json())
+      .then(data => setVisitors(data.visitors));
+  }, []);
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <p>👀 {visitors} visitors</p>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+
+            <Route path="/projects/cileuksa-village" element={<CileuksaVillage />} />
+            <Route path="/projects/hris" element={<HRIS />} />
+            <Route path="/projects/timeline-app" element={<TimelineApp />} />
+            <Route path="/projects/reservasi-app" element={<ReservasiSim />} />
+            <Route path="/projects/simkesmas" element={<SimKesMas />} />
+            <Route path="/projects/project-management" element={<ProjectManagement />} />
+            <Route path="/projects/project-fatmawati" element={<Fatmawati />} />
+            <Route path="/projects/project-bekasi" element={<Bekasi />} />
+            <Route path="/projects/project-ciawi" element={<Ciawi />} />
+            <Route path="/projects/project-mangusada" element={<Mangusada />} />
+            <Route path="/projects/project-amc" element={<AMC />} />
+            <Route path="/projects/project-royal-prima" element={<Medan />} />
+            <Route path="/projects/project-grhasia" element={<Grhasia />} />
+            <Route path="/projects/project-ternate" element={<Ternate />} />
+            <Route path="/projects/project-cibinong" element={<Cibinong />} />
+
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
