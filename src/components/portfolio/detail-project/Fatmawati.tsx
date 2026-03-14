@@ -86,7 +86,7 @@ const Fatmawati = () => {
           </h1>
 
           <p className="text-muted-foreground mb-6">
-              A modular Hospital Information System (HIS) upgraded from v2 to v3 using Vue.js and Laravel 8. 
+              A modular Hospital Information System (HIS) upgraded from v2 to v3 using Vue.js and Laravel 10. 
               The system operates as an ERP-style healthcare platform integrating front-office and back-office hospital workflows, 
               while supporting interoperability with external services such as BPJS, e-Claim, RIS, PACS, LIS, and online pharmacy systems. 
               The architecture utilizes PostgreSQL and MongoDB for data management and Docker-based containerization for scalable deployment.
